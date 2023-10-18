@@ -1,0 +1,12 @@
+<!-- /views/flexible.erb -->
+<%= params %>
+
+<h1><%=@number_of_dice.to_s%>d<%=@number_of_sides.to_s%></h1>
+
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
